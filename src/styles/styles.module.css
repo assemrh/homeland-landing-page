@@ -1,0 +1,51 @@
+.banner_img_layer {
+    @apply absolute;
+}
+
+.banner_text_layer {
+    @apply flex min-h-[94vh] w-screen flex-col items-center justify-evenly  text-center  bg-[url('/images/rectangle-1.jpg')];
+}
+
+.banner_title {
+    @apply text-white xl:mb-2 font-semibold italic xl:text-[5.5rem] xl:leading-[6.438rem] font-['Brygada_1918'];
+}
+
+.banner_text {
+    @apply text-white font-medium text-sm xl:text-[1.5rem] not-italic xl:leading-[2.25rem]  font-['Poppins'] ;
+}
+
+.banner_whatsapp_btn,
+.banner_left_btn {
+    @apply xl:mt-6 xl:px-16 md:px-12 w-[90vw] text-center justify-center md:w-auto xl:py-3 py-2;
+}
+.banner_whatsapp_btn{
+    @apply bg-[#62C96E];
+}
+.banner_left_btn {
+    @apply bg-[#C8A55A];
+}
+.footer_text {
+    @apply text-white font-['Poppins'] not-italic font-normal leading-6;
+}
+
+.h2_1 {
+     @apply italic font-semibold text-6xl text-[#1C3556] mb-12 font-['Brygada_1918'] ;
+
+ }
+.golden_text{
+    @apply italic font-semibold text-3xl leading-9 text-[#C8A55A] mb-2 font-['Brygada_1918'] ;
+
+ }
+.card {
+    @apply  box-border bg-white rounded-xl border-2 border-[#C8A55A] px-10  py-5 text-left ;
+}
+/*.card:not(:last-child) {
+    @apply mb-3;
+}*/
+.card_text{
+    @apply mt-2 not-italic font-normal text-base leading-6 text-[#1C3556] font-['Poppins'];
+}
+
+.project_card {
+    @apply container flex flex-row  justify-center bg-[#25303E] rounded-xl;
+}

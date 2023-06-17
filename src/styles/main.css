@@ -1,0 +1,54 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dot-pagination.swiper-pagination-bullet {
+    width: .75rem!important;
+    height: .75rem!important;
+    text-align: center;
+    line-height: .75rem;
+    font-size: .75rem;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+.dot-pagination.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply  bg-[#fff];
+}
+
+.custom-pagination .custom-swiper-pagination-bullet {
+    @apply mx-3 min-w-max px-10 py-3 bg-[#25303E]  lg:min-w-[147px] rounded-full ;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.custom-pagination .custom-swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply  bg-[#1C3556];
+}
+
+/*#1C3556*/
+.custom-pagination .custom-swiper-pagination-bullet .pagination-text {
+    @apply not-italic font-medium text-2xl leading-9 text-white   font-['Poppins'];
+}
