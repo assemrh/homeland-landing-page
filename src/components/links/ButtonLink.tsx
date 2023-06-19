@@ -13,6 +13,8 @@ const ButtonLinkVariant = [
   'ghost',
   'light',
   'dark',
+  'whatsapp',
+  'golden',
 ] as const;
 const ButtonLinkSize = ['sm', 'base'] as const;
 
@@ -91,6 +93,8 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
               'border border-gray-600',
               'hover:bg-gray-800 active:bg-gray-700 disabled:bg-gray-700',
             ],
+            variant === 'whatsapp' && ['bg-whatsapp  text-white'],
+            variant === 'golden' && ['bg-golden  text-white'],
           ],
           //#endregion  //*======== Variants ===========
           'disabled:cursor-not-allowed',

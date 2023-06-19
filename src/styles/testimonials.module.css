@@ -1,0 +1,49 @@
+.card {
+  @apply relative block  w-full overflow-hidden  rounded-lg border border-[#C8A55A] p-6 text-left shadow lg:max-w-md;
+}
+
+.bg {
+  @apply absolute -bottom-8 -right-28 opacity-10;
+  /*bg-[url('/svg/bg-logo.svg')] bg-no-repeat w-80 h-80 bg-contain ;*/
+}
+
+.title {
+  @apply text-center font-['Brygada_1918'] not-italic text-[#C8A55A];
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text {
+  @apply text-left;
+}
+.h2_1 {
+  @apply mx-8 mb-12 font-['Brygada_1918'] text-6xl font-semibold italic  text-[#1C3556];
+}
+.golden_text {
+  @apply text-[#C8A55A];
+}
+.name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* secondary */
+
+  color: #1c3556;
+}
+.country {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: rgba(37, 48, 62, 0.64);
+}
