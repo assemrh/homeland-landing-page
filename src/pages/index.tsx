@@ -109,8 +109,8 @@ export default function HomePage() {
           </div>
         </section>
         <section className='section-3 bg-white'>
-          <div className='container mx-auto flex flex-row gap-x-8'>
-            <div className='mb-32 w-2/3 px-4 '>
+          <div className='container mx-auto flex w-full flex-col gap-8 md:flex-row'>
+            <div className='mb-32 w-full px-4 md:w-2/3 '>
               <div className='flex flex-col gap-y-11'>
                 <h1 className='text-5xl text-[#1C3556]'>
                   6 Reasons Make Turkey Unique Investment Opportunity
@@ -120,7 +120,7 @@ export default function HomePage() {
                 </h2>
               </div>
             </div>
-            <div className='flex w-1/3 items-center justify-center px-4 text-center '>
+            <div className='mb-4 flex w-full items-center justify-center px-4 text-center md:w-1/3 '>
               <Image
                 src='/images/1.png'
                 width={61}
