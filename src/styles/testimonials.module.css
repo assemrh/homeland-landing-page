@@ -18,13 +18,13 @@
   @apply text-left;
 }
 .h2_1 {
-  @apply mx-8 mb-12 font-['Brygada_1918'] text-6xl font-semibold italic  text-[#1C3556];
+  @apply mx-8 mb-12 font-['Brygada_1918'] text-5xl font-semibold italic text-[#1C3556]  md:text-6xl;
 }
 .golden_text {
   @apply text-[#C8A55A];
 }
 .name {
-  font-family: 'Poppins';
+  @apply font-['Poppins'];
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -38,7 +38,7 @@
   color: #1c3556;
 }
 .country {
-  font-family: 'Poppins';
+  @apply font-['Poppins'];
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

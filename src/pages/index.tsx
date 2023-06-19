@@ -167,7 +167,7 @@ export default function HomePage() {
         <section className='bg-gray-800'>
           <form>
             <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-left'>
-              <div className='mb-6 w-1/2 '>
+              <div className='mb-6 w-full md:w-1/2 '>
                 <label
                   htmlFor='fullname'
                   className='mb-2 block text-lg font-medium text-white '
@@ -182,7 +182,7 @@ export default function HomePage() {
                   required
                 />
               </div>
-              <div className='mb-6 w-1/2 '>
+              <div className='mb-6 w-full md:w-1/2 '>
                 <label
                   id='number-label'
                   htmlFor='number'
@@ -199,7 +199,7 @@ export default function HomePage() {
                   onChange={(phone) => setPhone(phone)}
                 />
               </div>
-              <div className='mb-6 w-1/2 '>
+              <div className='mb-6 w-full md:w-1/2 '>
                 <label
                   htmlFor='email'
                   className='mb-2 block text-lg font-medium  text-white '
@@ -214,7 +214,7 @@ export default function HomePage() {
                   required
                 />
               </div>
-              <div className='mb-6 w-1/2'>
+              <div className='mb-6 w-full md:w-1/2'>
                 <label
                   htmlFor='password'
                   className='mb-2 block text-lg font-medium text-white'
@@ -229,15 +229,12 @@ export default function HomePage() {
                   required
                 />
               </div>
-              <div className='mb-6 w-1/2'>
-                <label
-                  htmlFor='password'
-                  className='mb-2 block text-base font-medium text-white'
-                >
+              <div className='mb-6 w-full md:w-1/2'>
+                <label className='mb-2 block text-base font-medium text-white'>
                   How would you like us to contact you? (You can select
                   multiple)
                 </label>
-                <div className='mb-6  flex  items-start gap-x-1'>
+                <div className='mb-6  flex flex-col items-start  gap-2 md:flex-row'>
                   <div className='flexitems-center h-5'>
                     <input
                       id='Call'
@@ -246,13 +243,13 @@ export default function HomePage() {
                       className='focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800'
                       required
                     />
+                    <label
+                      htmlFor='Call'
+                      className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+                    >
+                      Call
+                    </label>
                   </div>
-                  <label
-                    htmlFor='Call'
-                    className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
-                  >
-                    Call
-                  </label>
 
                   <div className='flex h-5 items-center'>
                     <input
@@ -262,13 +259,13 @@ export default function HomePage() {
                       className='focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800'
                       required
                     />
+                    <label
+                      htmlFor='Whatsapp'
+                      className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+                    >
+                      Whatsapp
+                    </label>
                   </div>
-                  <label
-                    htmlFor='Whatsapp'
-                    className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
-                  >
-                    Whatsapp
-                  </label>
 
                   <div className='flex h-5 items-center'>
                     <input
@@ -278,14 +275,13 @@ export default function HomePage() {
                       className='focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800'
                       required
                     />
+                    <label
+                      htmlFor='Telegram'
+                      className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+                    >
+                      Telegram
+                    </label>
                   </div>
-                  <label
-                    htmlFor='Telegram'
-                    className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
-                  >
-                    Telegram
-                  </label>
-
                   <div className='flex h-5 items-center'>
                     <input
                       id='E-mail'
@@ -294,16 +290,16 @@ export default function HomePage() {
                       className='focus:ring-3 h-4 w-4 rounded border border-gray-300 bg-gray-50 focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800'
                       required
                     />
+                    <label
+                      htmlFor='E-mail'
+                      className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+                    >
+                      E-mail
+                    </label>
                   </div>
-                  <label
-                    htmlFor='E-mail'
-                    className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
-                  >
-                    E-mail
-                  </label>
                 </div>
               </div>
-              <div className='mb-6 w-1/2 '>
+              <div className='mb-6 w-full md:w-1/2 '>
                 <label
                   htmlFor='notes'
                   className='mb-2 block text-lg font-medium text-gray-900 dark:text-white'
@@ -318,7 +314,7 @@ export default function HomePage() {
                   required
                 />
               </div>
-              <div className='mb-6 w-1/2 '>
+              <div className='mb-6 w-full md:w-1/2 '>
                 <p className='mb-2 block text-base font-medium text-white  '>
                   We will not share your email or any of your information with
                   any other party.
@@ -331,7 +327,7 @@ export default function HomePage() {
                   Contact us to find the villa you’re looking for
                 </ButtonLink>
               </div>
-              <div className='mb-6 w-1/2 '>
+              <div className='mb-6 w-full md:w-1/2 '>
                 <ButtonLink
                   className='w-full justify-center text-center'
                   variant='whatsapp'

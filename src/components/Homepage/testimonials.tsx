@@ -12,8 +12,10 @@ export default function Testimonials() {
         <div className='mt-36  max-w-sm rounded-lg border border-[#C8A55A] shadow'>
           <div className='-mt-36 px-5'>
             <Image
-              className='rounded-t-lg'
+              className='mt-8 w-full rounded-t-lg object-fill'
               src='/images/testimonial-1/user/rectangle-21.jpg'
+              width='400'
+              height='537'
               alt=''
             />
           </div>
@@ -38,8 +40,10 @@ export default function Testimonials() {
         <div className='mt-36  max-w-sm rounded-lg border border-[#C8A55A] shadow'>
           <div className='-mt-36 px-5'>
             <Image
-              className='rounded-t-lg'
+              className='mt-8 w-full  rounded-t-lg  object-fill'
               src='/images/testimonial-1/user/rectangle-21.jpg'
+              width='400'
+              height='537'
               alt=''
             />
           </div>
@@ -64,7 +68,9 @@ export default function Testimonials() {
         <div className='mt-36  max-w-sm rounded-lg border border-[#C8A55A] shadow'>
           <div className='-mt-36 px-5'>
             <Image
-              className='rounded-t-lg'
+              className='mt-8 w-full  rounded-t-lg  object-fill'
+              width='400'
+              height='537'
               src='/images/testimonial-1/user/rectangle-21.jpg'
               alt=''
             />
